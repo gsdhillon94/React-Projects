@@ -25,10 +25,12 @@
 .container-left {
   height: 84vh;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .container-right {
   padding: 1rem;
+  width: 60%;
 }
 
 /* width */
@@ -47,8 +49,11 @@
   background: rgb(61, 61, 61);
   border-radius: 10px;
 }
-
-@media screen and (max-width: 425px) {
+.direction {
+  color: #110fd4;
+  cursor: pointer;
+}
+@media screen and (max-width: 580px) {
   .contact-container {
     display: block;
     color: #000000;
@@ -57,5 +62,8 @@
     height: 50vh;
     overflow-y: scroll;
     border-bottom: 1px solid #808080;
+  }
+  .container-right {
+    width: 90%;
   }
 }

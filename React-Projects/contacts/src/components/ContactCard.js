@@ -1,15 +1,26 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./contactCard.css";
+import {
+  faArrowRight,
+  faEnvelope,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import { faDailymotion } from "@fortawesome/free-brands-svg-icons";
 
 export default function ContactCard(props) {
   return (
     <div className="card-container">
-      <div>Name : {props.data.name}</div>
-      <div>Username : {props.data.username}</div>
-      <div>Email : {props.data.email}</div>
-      <div>Phone : {props.data.phone}</div>
+      <h4> {props.data.name}</h4>
+      <div>
+        <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> {props.data.email}
+      </div>
+      <div>
+        {" "}
+        <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> {props.data.phone}
+      </div>
       <button onClick={() => props.seeDetail(props.data.id)}>
-        See Details
+        See Details <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
       </button>
     </div>
   );
