@@ -1,0 +1,50 @@
+.card-container {
+  display: flex;
+  margin: 1rem 0;
+  padding: 1rem;
+  flex-wrap: wrap;
+  transition: 0.4s;
+  box-shadow: 1px 1px 5px #808080;
+  width: 18rem;
+}
+
+.card-container:hover {
+  /* box-shadow: 10px 10px 10px #808080; */
+}
+
+.card-container div {
+  width: 100%;
+  text-align: left;
+}
+
+.card-container:nth-child(1) {
+  margin: 0;
+}
+
+.card-container button {
+  width: 100%;
+  margin-top: 1rem;
+  border: none;
+  padding: 0.5rem;
+  background: #110fd4;
+  color: #ffffff;
+  border-radius: 2px;
+  font-size: 0.75rem;
+  transition: 0.4s;
+}
+
+.card-container:hover button {
+  box-shadow: 4px 5px 5px #85859a;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 425px) {
+  .card-container,
+  .card-container:nth-child(1) {
+    margin: 0.75rem auto;
+    padding: 0.5rem;
+  }
+}
