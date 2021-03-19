@@ -1,0 +1,41 @@
+html {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url(./img/plants.jpg) no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  background-color: #000000;
+  min-height: 100%;
+}
+
+form {
+  margin-top: 4rem;
+  padding: 2rem;
+}
+form button,
+form h5 {
+  margin: 1rem 0rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  background-color: #000000;
+  color: #62ff00;
+  font-weight: 600;
+  transition: all 2s;
+  border-bottom: 1px solid #66ff07;
+}
